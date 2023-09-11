@@ -1,0 +1,10 @@
+.catalog-pop-up-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link:hover {
+    color: #0260E8;
+    text-decoration: underline;
+}

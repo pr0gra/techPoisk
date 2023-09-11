@@ -1,0 +1,71 @@
+.footer{
+    background: rgba(0, 0, 0, 0.85);
+    padding: 24px 150px 9px;
+    
+}
+
+.link {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main, .copyright{
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.main{
+    padding-bottom: 24px;
+    align-items: center;
+    display: flex;
+    border-bottom: solid 1px white;
+}
+
+.left-part{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column {
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-container{
+    align-items: center;
+    display: flex;
+    gap: 22px;
+    padding-top: 60px;
+}
+
+.right-part{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tech-poisk-subtitle{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.copyright{ 
+    padding-top: 19px;
+}
+
+.copyright-text{ 
+    color: #FFF;
+    font-size: 14px;
+}
+
+.logo-image{
+    display: block;
+    margin-left: auto;
+}
+

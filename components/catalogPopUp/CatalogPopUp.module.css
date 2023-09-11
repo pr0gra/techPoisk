@@ -1,0 +1,42 @@
+.catalog-pop-up{
+    position: absolute;
+    background: white;
+    top: 65px;
+    width: 100%;
+    margin: 0 auto;
+    animation: ani 0.2s forwards;
+    padding: 17px 24px;
+    box-sizing: border-box;
+    display: grid;
+    flex-wrap: wrap; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+}
+
+.block-title{
+    font-size: 18px;
+    color: #000;
+}
+
+.content{
+    display: flex;
+    gap: 31px
+}
+
+.block-column{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
