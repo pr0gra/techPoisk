@@ -12,8 +12,9 @@ import powerIcon from "../../assets/icons/power.svg";
 
 import favouritesLight from "../../assets/icons/favourites-light.svg";
 import comparisonLight from "../../assets/icons/comparison-light.svg";
+import { useState } from "react";
 
-export function ConfiguratorTable() {
+export function ConfiguratorTable({ searchByCPU }) {
   return (
     <div className={styles["configurator-table-container"]}>
       <h2 className={styles["main-title"]}>Системный блок</h2>
@@ -40,7 +41,7 @@ export function ConfiguratorTable() {
               </div>
             </div>
           </div>
-          <div className={styles["row"]}>
+          <div className={styles["row"]} onClick={searchByCPU}>
             <div className={styles["row-title-container"]}>
               <h2 className={styles["row-title"]}>Процессор</h2>
               <Image
