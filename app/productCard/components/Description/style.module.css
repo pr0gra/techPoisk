@@ -1,0 +1,49 @@
+.horizontalLine {
+  width: 100%;
+  height: 1px;
+  background: rgba(158, 158, 158, 0.25);
+  margin-bottom: 14px;
+}
+.blockTitle {
+  color: #000;
+  font-family: SourceSansProRegular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.title {
+  color: #000;
+  font-family: SourceSansProRegular;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 40px 0;
+  transform: translateX(-40px);
+}
+.table thead tr {
+  transform: translateY(-10px);
+}
+
+.table tr td:nth-child(2n -1) {
+  color: #000;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px; /* 178.947% */
+}
+.table tr td:nth-child(2n) {
+  color: #000;
+  font-family: SourceSansProRegular;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 178.947% */
+}
