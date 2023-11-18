@@ -26,6 +26,7 @@
   border-collapse: separate;
   border-spacing: 40px 0;
   transform: translateX(-40px);
+  max-width: 361px;
 }
 .table thead tr {
   transform: translateY(-10px);
@@ -46,4 +47,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: 34px; /* 178.947% */
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }

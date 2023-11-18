@@ -7,7 +7,16 @@ export const Description = () => {
     <div>
       <p className={styles.blockTitle}>Характеристики</p>
       <div className={styles.horizontalLine} />
-      <DescriptionContainer title="Основные" />
+      <div className={styles.descriptionContainer}>
+        <DescriptionContainer title="Основные" />
+        <DescriptionContainer title="Ядро" />
+        <DescriptionContainer title="Оперативная память" />
+        <DescriptionContainer title="Частота" />
+        <DescriptionContainer title="Основные" />
+        <DescriptionContainer title="Ядро" />
+        <DescriptionContainer title="Оперативная память" />
+        <DescriptionContainer title="Частота" />
+      </div>
     </div>
   );
 };
