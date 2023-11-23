@@ -4,6 +4,7 @@ import { SelectImage } from "./components/SelectImage/SelectImage";
 import { Specifications } from "./components/Specifications/Specifications";
 import styles from "./style.module.css";
 export default function ProductCard() {
+  const fakeData = {};
   return (
     <>
       <div className={styles.container}>

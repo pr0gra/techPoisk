@@ -1,57 +1,76 @@
-.horizontalLine {
-  width: 100%;
-  height: 1px;
-  background: rgba(158, 158, 158, 0.25);
-  margin-bottom: 14px;
-}
-.blockTitle {
+.title {
   color: #000;
+
   font-family: SourceSansProRegular;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.title {
+.hline {
+  width: 100%;
+  height: 1px;
+
+  background-color: rgba(158, 158, 158, 0.25);
+  margin-bottom: 17px;
+}
+
+.DescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.DescriptionSecondContainer {
+  display: flex;
+
+  /* justify-content: space-between;
+  gap: 100px; */
+}
+.DescriptionBlockTitle {
   color: #000;
+
   font-family: SourceSansProRegular;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-align: left;
   margin-bottom: 10px;
 }
-.table {
-  border-collapse: separate;
-  border-spacing: 40px 0;
-  transform: translateX(-40px);
-  max-width: 361px;
-}
-.table thead tr {
-  transform: translateY(-10px);
+.DescriptionBlock {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
 }
 
-.table tr td:nth-child(2n -1) {
-  color: #000;
-  font-family: Inter;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 34px; /* 178.947% */
+.Description {
+  display: flex;
+  flex: 1;
 }
-.table tr td:nth-child(2n) {
+
+.DescriptionColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+.DescriptionColumn p {
   color: #000;
   font-family: SourceSansProRegular;
   font-size: 19px;
   font-style: normal;
+  /* line-height: 34px; */
+}
+.DescriptionColumn p {
   font-weight: 600;
-  line-height: 34px; /* 178.947% */
+  flex: 1;
 }
 
-.descriptionContainer {
+.DescriptionRow {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+}
+.DescriptionRow h3 {
+  font-weight: 100;
+  flex: 1;
 }
