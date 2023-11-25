@@ -7,14 +7,12 @@ interface CatalogPopUpColumnProps {
 
 export function CatalogPopUpColumn({ array }: CatalogPopUpColumnProps) {
   return (
-    <div className={styles["catalog-pop-up-column"]}> 
-      {array.map((item) => {
+    <div className={styles["catalog-pop-up-column"]}>
+      {array.map((item, index) => {
         return (
-          <>
-            <Link className={styles["link"]} href={"/"}>
-              {item}
-            </Link>
-          </>
+          <Link className={styles["link"]} href={"/"} key={index}>
+            {item}
+          </Link>
         );
       })}
     </div>

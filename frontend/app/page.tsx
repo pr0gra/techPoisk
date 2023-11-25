@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <>
       {show && <CPUsearch />}
+
       <div className={styles["home"]}>
         <h1 className={styles["title-page"]}>Конфигуратор ПК</h1>
         <div className={styles["main"]}>

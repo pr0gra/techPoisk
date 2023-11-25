@@ -1,6 +1,9 @@
 "use client";
 import styles from "./style.module.css";
+import { usePathname } from "next/navigation";
 export const Description = () => {
+  const params = usePathname();
+  console.log(params);
   return (
     <>
       <h1 className={styles.title}>Характеристики</h1>
