@@ -62,7 +62,7 @@ export const Description = () => {
                     </p>
                   </div>
                   <div className={styles.DescriptionRow}>
-                    <h3>Энергоэффективные ядра</h3>{" "}
+                    <h3>Энергоэффективные ядра</h3>
                     <p>
                       <span>нет</span>
                     </p>
@@ -203,6 +203,7 @@ export const Description = () => {
           </div>
         </div>
       </div>
+      <div className={styles.hline} />
     </>
   );
 };
