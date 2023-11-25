@@ -1,0 +1,104 @@
+.container {
+  border-radius: 13px;
+  background: #ebedff;
+  box-shadow: 1px 1px 4px 0px #a0aaff;
+  padding: 29px 17px 19px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(10px, 5vw, 161px);
+}
+
+.price p {
+  color: #000;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.price span {
+  color: #000;
+
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.buttonContainer {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.price button {
+  height: 51px;
+  width: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #0260e8;
+}
+
+.sellersContainer {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.sellersConfiguratorButton {
+  border-radius: 5px;
+  border: 1px solid #717171;
+  background-color: transparent;
+  width: 29px;
+  height: 29px;
+  justify-content: center;
+  user-select: none;
+  align-items: center;
+  display: flex;
+}
+.sellersBuyButton {
+  justify-content: center;
+  user-select: none;
+  align-items: center;
+  display: flex;
+  background-color: #0260e8;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 13px;
+}
+.sellersShop {
+  flex: 2;
+  align-items: center;
+  color: #000;
+  /* font-family: Source Sans Pro; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  display: flex;
+}
+.sellersPrice {
+  color: #000;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  align-items: center;
+  display: flex;
+}
+.sellersBuyButton p {
+  color: #fff;
+
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
