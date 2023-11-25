@@ -5,7 +5,12 @@ import cx from "classnames";
 import { SelectImageButton } from "./SelectImageButton";
 export const SelectImage = () => {
   const [imageIndex, setImageIndex] = useState<number>(0);
-
+  const images: { [key: number]: string } = {
+    //Сделал для теста
+    0: "https://progermany.ru/wp-content/uploads/2023/05/germ.jpg",
+    1: "https://img1.liveinternet.ru/images/attach/b/2/2/263/2263831_15734625_deg.gif",
+    2: "https://progermany.ru/wp-content/uploads/2023/05/germaniya3.jpg",
+  };
   return (
     <div className={styles.container}>
       <div>
@@ -25,10 +30,17 @@ export const SelectImage = () => {
           >
             2
           </SelectImageButton>
+          <SelectImageButton
+            imageIndex={imageIndex}
+            setImageIndex={setImageIndex}
+            idElement={2}
+          >
+            3
+          </SelectImageButton>
         </ul>
       </div>
-      <div className={styles.bigImage}>
-        {imageIndex % 2 == 0 ? <p>Чет</p> : <p>Не чет</p>}
+      <div className={styles.bigImageContainer}>
+        <img src={images[imageIndex]} alt="img" />
       </div>
     </div>
   );
