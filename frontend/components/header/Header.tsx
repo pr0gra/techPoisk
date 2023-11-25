@@ -33,10 +33,10 @@ export function Header() {
               Сборки пользователей
             </Link>
           </div>
-          <button className={styles["configurator-button"]}>
+          <Link href={'/'} className={styles["configurator-button"]}>
             <Image src={setting} alt="" />
             Конфигуратор
-          </button>
+          </Link>
         </div>
       </div>
       <div className={styles["search-part"]}>

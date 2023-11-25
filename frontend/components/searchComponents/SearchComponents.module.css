@@ -1,0 +1,14 @@
+.layout{
+    inset: 0;
+    position: fixed;
+    background: rgb(0 0 0 / 50%);
+}
+
+.modal{
+    max-width: 90rem;
+    width: 100%;
+    top: 15px;
+    height: 1086px;
+    background: white;
+    position: fixed;
+}
