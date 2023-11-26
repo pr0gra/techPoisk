@@ -249,7 +249,7 @@ export const CaseDescription = () => {
                       </p>
                     </div>
                     <div className={styles.DescriptionRow}>
-                      <h3>Количество отсеков 2.5" накопителей</h3>
+                      <h3>Количество отсеков 2.5 накопителей</h3>
                       <p>
                         <span>2 шт</span>
                       </p>
@@ -282,7 +282,7 @@ export const CaseDescription = () => {
                       </p>
                     </div>
                     <div className={styles.DescriptionRow}>
-                      <h3>Вес</h3>
+                      <h3>Bec</h3>
                       <p>
                         <span>10 кг</span>
                       </p>

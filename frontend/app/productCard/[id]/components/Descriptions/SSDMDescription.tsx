@@ -17,7 +17,7 @@ export const SSDMDescription = () => {
                 <div className={styles.DescriptionRow}>
                   <h3>Тип</h3>
                   <p>
-                    <span>2.5" SATA накопитель</span>
+                    <span>2.5 SATA накопитель</span>
                   </p>
                 </div>
                 <div className={styles.DescriptionRow}>

@@ -17,7 +17,7 @@ export const SSDDescription = () => {
                 <div className={styles.DescriptionRow}>
                   <h3>Тип</h3>
                   <p>
-                    <span>2.5" SATA накопитель</span>
+                    <span>2.5 SATA накопитель</span>
                   </p>
                 </div>
                 <div className={styles.DescriptionRow}>
@@ -62,14 +62,14 @@ export const SSDDescription = () => {
                   </div>
                   <div className={styles.DescriptionRow}>
                     <h3>
-                      Скорость производительности чтения 4 Кб файлов (QD32)
+                      Скорость производительности чтения 4 K6 файлов (QD32)
                     </h3>
                     <p>
                       <span>98000 IOPS</span>
                     </p>
                   </div>
                   <div className={styles.DescriptionRow}>
-                    <h3>Скорость произвольной записи 4 Кб файлов (QD32)</h3>
+                    <h3>Скорость произвольной записи 4 K6 файлов (QD32)</h3>
                     <p>
                       <span>88000 IOPS</span>
                     </p>
@@ -107,7 +107,7 @@ export const SSDDescription = () => {
                   <div className={styles.DescriptionRow}>
                     <h3>Объем DRAM буфера</h3>
                     <p>
-                      <span>1024 Мб</span>
+                      <span>1024 Mb</span>
                     </p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export const SSDDescription = () => {
               <div className={styles.Description}>
                 <div className={styles.DescriptionColumn}>
                   <div className={styles.DescriptionRow}>
-                    <h3>Максимальный ресурс записи (TBW)</h3>
+                    <h3>Максимальный pecypc записи (TBW)</h3>
                     <p>
                       <span>600 ТБ</span>
                     </p>
@@ -168,9 +168,9 @@ export const SSDDescription = () => {
                     </p>
                   </div>
                   <div className={styles.DescriptionRow}>
-                    <h3>Вес</h3>
+                    <h3>вес</h3>
                     <p>
-                      <span>45 г</span>
+                      <span>45 Г</span>
                     </p>
                   </div>
                 </div>

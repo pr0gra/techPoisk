@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "./style.module.css";
 import cx from "classnames";
 import { SelectImageButton } from "./SelectImageButton";
+import Image from "next/image";
 export const SelectImage = () => {
   const [imageIndex, setImageIndex] = useState<number>(0);
   const images: { [key: number]: string } = {
@@ -40,7 +41,7 @@ export const SelectImage = () => {
         </ul>
       </div>
       <div className={styles.bigImageContainer}>
-        <img src={images[imageIndex]} alt="img" />
+        <Image src={images[imageIndex]} alt="img" />
       </div>
     </div>
   );
