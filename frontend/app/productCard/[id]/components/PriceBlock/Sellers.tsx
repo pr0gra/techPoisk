@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
-import setting from "../../../../assets/icons/setting-2.svg";
+import setting from "../../../../../assets/icons/setting-2.svg";
 export const Sellers = () => {
   return (
     <div className={styles.sellersContainer}>

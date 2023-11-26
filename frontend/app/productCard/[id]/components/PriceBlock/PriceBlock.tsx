@@ -1,7 +1,7 @@
 "use client";
 import styles from "./style.module.css";
-import heart from "../../../../assets/icons/heart.svg";
-import graph from "../../../../assets/icons/graph.svg";
+import heart from "../../../../../assets/icons/heart.svg";
+import graph from "../../../../../assets/icons/graph.svg";
 import Image from "next/image";
 import { Sellers } from "./Sellers";
 export const PriceBlock = () => {
