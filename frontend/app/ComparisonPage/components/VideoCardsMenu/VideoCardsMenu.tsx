@@ -50,11 +50,11 @@ export default function VideoCardsMenu() {
           <div style={{ display: "flex" }}>
             <div className={styles.descriptionSecondContainer}>
               <p className={styles.shopStyle}>Цена</p>
-              <p className={styles.descriptionStyle}>7898 руб.</p>
+              <p className={styles.descriptionStyle}>7898 rub.</p>
             </div>
             <div className={styles.descriptionSecondContainer}>
               <p className={styles.shopStyle}>Цена</p>
-              <p className={styles.descriptionStyle}>7898 руб.</p>
+              <p className={styles.descriptionStyle}>7898 rub.</p>
             </div>
           </div>
         </div>

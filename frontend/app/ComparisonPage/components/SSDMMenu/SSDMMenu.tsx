@@ -33,7 +33,7 @@ export default function SSDMMenu() {
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
           <p className={styles.shopStyle}>Цена</p>
-          <p className={styles.descriptionStyle}>7898 руб.</p>
+          <p className={styles.descriptionStyle}>7898 rub.</p>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
