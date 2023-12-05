@@ -14,6 +14,10 @@ import catalog from "../../assets/icons/catalog.svg";
 import search from "../../assets/icons/search.svg";
 import { CatalogPopUp } from "../catalogPopUp/CatalogPopUp";
 
+import localFont from "next/font/local";
+
+const sourceSansPro = localFont({ src: "./SourceSansPro-Regular.woff2" });
+
 export function Header() {
   const [isCatalogPopUpActive, setIsCatalogPopUpActive] = useState(false);
   const [mouseOnCatalog, setMouseOnCatalog] = useState(false);
@@ -33,9 +37,9 @@ export function Header() {
               Сборки пользователей
             </Link>
           </div>
-          <Link href={'/'} className={styles["configurator-button"]}>
+          <Link href={"/"} className={styles["configurator-button"]}>
             <Image src={setting} alt="" />
-            Конфигуратор
+            <span className={sourceSansPro.className}>Конфигуратор</span>
           </Link>
         </div>
       </div>
@@ -45,10 +49,8 @@ export function Header() {
             className={styles["catalog-button-container"]}
             onClick={() => setIsCatalogPopUpActive((prev) => !prev)}
           >
-            <button
-              className={styles["catalog-button"]}
-            >
-              Каталог
+            <button className={styles["catalog-button"]}>
+              <span className={sourceSansPro.className}>Каталог</span>
             </button>
           </div>
           <form className={styles["form"]}>
@@ -72,9 +74,8 @@ export function Header() {
             Избранное
           </Link>
         </div>
-        {isCatalogPopUpActive && <CatalogPopUp /> } 
+        {isCatalogPopUpActive && <CatalogPopUp />}
       </div>
-
     </header>
   );
 }

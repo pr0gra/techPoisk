@@ -39,7 +39,6 @@
 .configurator-button {
   display: flex;
   align-items: center;
-  font-family: SourceSansProRegular;
   background: #ff5252;
   border-radius: 5px;
   gap: 7px;
@@ -61,7 +60,6 @@
 }
 
 .catalog-button {
-  font-family: SourceSansProRegular;
   padding: 7px 15px;
   font-size: 20px;
   color: #fff;
