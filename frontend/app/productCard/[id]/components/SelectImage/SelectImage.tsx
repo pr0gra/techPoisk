@@ -34,7 +34,7 @@ export const SelectImage = () => {
         </ul>
       </div>
       <div className={styles.bigImageContainer}>
-        <img src={images[imageIndex]} alt="img" style={{ width: "100%" }} />
+        <Image src={images[imageIndex]} alt="img" />
       </div>
     </div>
   );
