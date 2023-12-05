@@ -17,7 +17,13 @@ import { PowerUnitDescription } from "./components/Descriptions/PowerUnitDescrip
 
 export default function ProductCard() {
   return (
-    <>
+    <div
+      style={{
+        maxWidth: "90rem",
+        margin: "0 auto",
+        padding: "24px 150px 22px",
+      }}
+    >
       <div className={styles.container}>
         <SelectImage />
         <Specifications />
@@ -35,6 +41,6 @@ export default function ProductCard() {
       {/* <SSDDescription /> */}
       {/* <SSDMDescription /> */}
       {/* <PowerUnitDescription /> */}
-    </>
+    </div>
   );
 }

@@ -15,7 +15,13 @@ import AssemblyBlock from "./components/AssemblyBlock/AssemblyBlock";
 export default function ComparisonPage() {
   let countAssembly = 2;
   return (
-    <>
+    <div
+      style={{
+        maxWidth: "90rem",
+        margin: "0 auto",
+        padding: "24px 150px 22px",
+      }}
+    >
       <h1 className={styles.title}>Сравнение</h1>
       <div className={styles.settings}>
         <p>Показать:</p>
@@ -44,6 +50,6 @@ export default function ComparisonPage() {
         <HDDMenu countAssembly={countAssembly} />
         <PowerUnitMenu countAssembly={countAssembly} />
       </div>
-    </>
+    </div>
   );
 }
