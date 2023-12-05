@@ -10,7 +10,7 @@ export default function AssemblyBlock({ imgUrl = "", countAssembly }: props) {
   return (
     <div
       className={styles.wrapper}
-      style={{ maxWidth: `100vw - calc(${countAssembly} * 290px )` }}
+      style={{ maxWidth: `calc(${countAssembly} * 290px )` }}
     >
       <div className={styles.descriptionContainer}>
         <div className={styles.imageContainer}>

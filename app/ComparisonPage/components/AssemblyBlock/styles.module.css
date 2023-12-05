@@ -70,6 +70,7 @@
 }
 .buttonContainer button {
   all: unset;
+  white-space: nowrap;
   cursor: pointer;
   width: 100%;
   border: 1px solid #0260e8;
@@ -78,7 +79,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 7px 11px 11px 7px;
+  padding: 7px 8px 8px 7px;
   color: #0260e8;
 
   font-family: SourceSansProRegular;

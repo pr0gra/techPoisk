@@ -11,7 +11,10 @@ interface props {
 export default function RAMMenu({ countAssembly }: props) {
   const [isHide, setIsHide] = useState(false);
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{ maxWidth: `calc(${countAssembly} * 290px )` }}
+    >
       <button className={styles.hideButton} onClick={() => setIsHide(!isHide)}>
         <h3 className={styles.title}>Оперативная память</h3>
         <Image
@@ -20,21 +23,20 @@ export default function RAMMenu({ countAssembly }: props) {
           className={cx(isHide ? styles.rotateImg : styles.rotate180Img)}
         />
       </button>
+      <div className={styles.rowContainer}>
+        <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+          Netac Shadow II
+        </p>
+        <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+          Netac Shadow II
+        </p>
+      </div>
       <div
         className={cx(
           styles.descriptionContainer,
           !isHide ? styles.open : styles.close
         )}
       >
-        <div className={styles.rowContainer}>
-          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
-            Netac Shadow II
-          </p>
-          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
-            Netac Shadow II
-          </p>
-        </div>
-
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
           <div className={styles.rowContainer}>

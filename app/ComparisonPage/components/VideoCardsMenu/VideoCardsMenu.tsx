@@ -11,7 +11,10 @@ interface props {
 export default function VideoCardsMenu({ countAssembly }: props) {
   const [isHide, setIsHide] = useState(false);
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{ maxWidth: `calc(${countAssembly} * 290px )` }}
+    >
       <button className={styles.hideButton} onClick={() => setIsHide(!isHide)}>
         <h3 className={styles.title}>Видеокарты</h3>
         <Image
@@ -20,20 +23,20 @@ export default function VideoCardsMenu({ countAssembly }: props) {
           className={cx(isHide ? styles.rotateImg : styles.rotate180Img)}
         />
       </button>
+      <div className={styles.rowContainer}>
+        <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+          NVIDIA GeForce RTX 4070 MSI
+        </p>
+        <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+          NVIDIA GeForce RTX 4070 MSI
+        </p>
+      </div>
       <div
         className={cx(
           styles.descriptionContainer,
           !isHide ? styles.open : styles.close
         )}
       >
-        <div className={styles.rowContainer}>
-          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
-            NVIDIA GeForce RTX 4070 MSI
-          </p>
-          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
-            NVIDIA GeForce RTX 4070 MSI
-          </p>
-        </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
           <div className={styles.rowContainer}>

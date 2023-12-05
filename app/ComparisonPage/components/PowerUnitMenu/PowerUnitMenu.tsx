@@ -11,7 +11,10 @@ interface props {
 export default function PowerUnitMenu({ countAssembly }: props) {
   const [isHide, setIsHide] = useState(false);
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{ maxWidth: `calc(${countAssembly} * 290px )` }}
+    >
       <button className={styles.hideButton} onClick={() => setIsHide(!isHide)}>
         <h3 className={styles.title}>Блок питания</h3>
         <Image
@@ -20,20 +23,20 @@ export default function PowerUnitMenu({ countAssembly }: props) {
           className={cx(isHide ? styles.rotateImg : styles.rotate180Img)}
         />
       </button>
+      <div className={styles.rowContainer}>
+        <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+          750W Be Quiet System Power 10
+        </p>
+        <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+          750W Be Quiet System Power 10
+        </p>
+      </div>
       <div
         className={cx(
           styles.descriptionContainer,
           !isHide ? styles.open : styles.close
         )}
       >
-        <div className={styles.rowContainer}>
-          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
-            750W Be Quiet System Power 10
-          </p>
-          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
-            750W Be Quiet System Power 10
-          </p>
-        </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
           <div className={styles.rowContainer}>
