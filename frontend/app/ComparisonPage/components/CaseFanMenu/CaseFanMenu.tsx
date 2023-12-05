@@ -5,8 +5,10 @@ import arrowDown from "../../../../assets/icons/arrow-down.svg";
 import cx from "classnames";
 import { useState } from "react";
 import Image from "next/image";
-
-export default function CaseFanMenu() {
+interface props {
+  countAssembly: number;
+}
+export default function CaseFanMenu({ countAssembly }: props) {
   const [isHide, setIsHide] = useState(false);
   return (
     <div className={styles.container}>
@@ -24,33 +26,78 @@ export default function CaseFanMenu() {
           !isHide ? styles.open : styles.close
         )}
       >
-        <p className={styles.descriptionStyle}>
-          Cooler Master Sickleflow 120 ARGB White 3 in 1
-        </p>
-        <div className={styles.hzline} />
-        <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Магазин</p>
-          <p className={styles.descriptionStyle}>Онлайн.Трейд</p>
+        <div className={styles.rowContainer}>
+          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+            Cooler Master Sickleflow 120 ARGB White 3 in 1
+          </p>
+          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+            Cooler Master Sickleflow 120 ARGB White 3 in 1
+          </p>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Цена</p>
-          <p className={styles.descriptionStyle}>7898 руб.</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Магазин</p>
+              <p className={styles.descriptionStyle}>Онлайн.Трейд</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Магазин</p>
+              <p className={styles.descriptionStyle}>Онлайн.Трейд</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Количество вентиляторов</p>
-          <p className={styles.descriptionStyle}>3</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Цена</p>
+              <p className={styles.descriptionStyle}>7898 руб.</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Цена</p>
+              <p className={styles.descriptionStyle}>7898 руб.</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Размер вентиляторов</p>
-          <p className={styles.descriptionStyle}>120x120</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Количество вентиляторов</p>
+              <p className={styles.descriptionStyle}>3</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Количество вентиляторов</p>
+              <p className={styles.descriptionStyle}>3</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Максимальная скорость</p>
-          <p className={styles.descriptionStyle}>1800 об/мин</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Размер вентиляторов</p>
+              <p className={styles.descriptionStyle}>120x120</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Размер вентиляторов</p>
+              <p className={styles.descriptionStyle}>120x120</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.hzline} />
+        <div className={styles.descriptionContainer}>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Максимальная скорость</p>
+              <p className={styles.descriptionStyle}>1800 об/мин</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Максимальная скорость</p>
+              <p className={styles.descriptionStyle}>1800 об/мин</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
       </div>

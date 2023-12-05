@@ -5,8 +5,10 @@ import arrowDown from "../../../../assets/icons/arrow-down.svg";
 import cx from "classnames";
 import { useState } from "react";
 import Image from "next/image";
-
-export default function VideoCardsMenu() {
+interface props {
+  countAssembly: number;
+}
+export default function VideoCardsMenu({ countAssembly }: props) {
   const [isHide, setIsHide] = useState(false);
   return (
     <div className={styles.container}>
@@ -24,7 +26,7 @@ export default function VideoCardsMenu() {
           !isHide ? styles.open : styles.close
         )}
       >
-        <div style={{ display: "flex" }}>
+        <div className={styles.rowContainer}>
           <p className={styles.descriptionStyle} style={{ flex: 1 }}>
             NVIDIA GeForce RTX 4070 MSI
           </p>
@@ -34,7 +36,7 @@ export default function VideoCardsMenu() {
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <div style={{ display: "flex" }}>
+          <div className={styles.rowContainer}>
             <div className={styles.descriptionSecondContainer}>
               <p className={styles.shopStyle}>Магазин</p>
               <p className={styles.descriptionStyle}>Онлайн.Трейд</p>
@@ -47,7 +49,7 @@ export default function VideoCardsMenu() {
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <div style={{ display: "flex" }}>
+          <div className={styles.rowContainer}>
             <div className={styles.descriptionSecondContainer}>
               <p className={styles.shopStyle}>Цена</p>
               <p className={styles.descriptionStyle}>7898 rub.</p>
@@ -60,7 +62,7 @@ export default function VideoCardsMenu() {
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <div style={{ display: "flex" }}>
+          <div className={styles.rowContainer}>
             <div className={styles.descriptionSecondContainer}>
               <p className={styles.shopStyle}>Объём памяти</p>
               <p className={styles.descriptionStyle}>12 Гб</p>
@@ -73,7 +75,7 @@ export default function VideoCardsMenu() {
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <div style={{ display: "flex" }}>
+          <div className={styles.rowContainer}>
             <div className={styles.descriptionSecondContainer}>
               <p className={styles.shopStyle}>Тип памяти</p>
               <p className={styles.descriptionStyle}>GDDR6X</p>
@@ -86,7 +88,7 @@ export default function VideoCardsMenu() {
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <div style={{ display: "flex" }}>
+          <div className={styles.rowContainer}>
             <div className={styles.descriptionSecondContainer}>
               <p className={styles.shopStyle}>TDP</p>
               <p className={styles.descriptionStyle}>200 вт</p>

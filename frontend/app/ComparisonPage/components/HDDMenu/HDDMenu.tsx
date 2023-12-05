@@ -5,8 +5,10 @@ import arrowDown from "../../../../assets/icons/arrow-down.svg";
 import cx from "classnames";
 import { useState } from "react";
 import Image from "next/image";
-
-export default function HDDMenu() {
+interface props {
+  countAssembly: number;
+}
+export default function HDDMenu({ countAssembly }: props) {
   const [isHide, setIsHide] = useState(false);
   return (
     <div className={styles.container}>
@@ -24,38 +26,92 @@ export default function HDDMenu() {
           !isHide ? styles.open : styles.close
         )}
       >
-        <p className={styles.descriptionStyle}>
-          2Tb SATA-III Seagate Barracuda
-        </p>
-        <div className={styles.hzline} />
-        <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Магазин</p>
-          <p className={styles.descriptionStyle}>Онлайн.Трейд</p>
+        <div className={styles.rowContainer}>
+          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+            2Tb SATA-III Seagate Barracuda
+          </p>
+
+          <p className={styles.descriptionStyle} style={{ flex: 1 }}>
+            2Tb SATA-III Seagate Barracuda
+          </p>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Цена</p>
-          <p className={styles.descriptionStyle}>7898 руб.</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Магазин</p>
+              <p className={styles.descriptionStyle}>Онлайн.Трейд</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Магазин</p>
+              <p className={styles.descriptionStyle}>Онлайн.Трейд</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Объем накопителя</p>
-          <p className={styles.descriptionStyle}>2 000 Гб</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Цена</p>
+              <p className={styles.descriptionStyle}>7898 руб.</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Цена</p>
+              <p className={styles.descriptionStyle}>7898 руб.</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Интерфейс</p>
-          <p className={styles.descriptionStyle}>SATA-III</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Объем накопителя</p>
+              <p className={styles.descriptionStyle}>2 000 Гб</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Объем накопителя</p>
+              <p className={styles.descriptionStyle}>2 000 Гб</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Скорость вращения шпинделя</p>
-          <p className={styles.descriptionStyle}>7200 об/мин</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Интерфейс</p>
+              <p className={styles.descriptionStyle}>SATA-III</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Интерфейс</p>
+              <p className={styles.descriptionStyle}>SATA-III</p>
+            </div>
+          </div>
         </div>
         <div className={styles.hzline} />
         <div className={styles.descriptionContainer}>
-          <p className={styles.shopStyle}>Объём буферной памяти</p>
-          <p className={styles.descriptionStyle}>256 Мб</p>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Скорость вращения шпинделя</p>
+              <p className={styles.descriptionStyle}>7200 об/мин</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Скорость вращения шпинделя</p>
+              <p className={styles.descriptionStyle}>7200 об/мин</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.hzline} />
+        <div className={styles.descriptionContainer}>
+          <div className={styles.rowContainer}>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Объём буферной памяти</p>
+              <p className={styles.descriptionStyle}>256 Мб</p>
+            </div>
+            <div className={styles.descriptionSecondContainer}>
+              <p className={styles.shopStyle}>Объём буферной памяти</p>
+              <p className={styles.descriptionStyle}>256 Мб</p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.hzline} />
