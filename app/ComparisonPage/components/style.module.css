@@ -71,3 +71,7 @@
 .descriptionSecondContainer {
   flex: 1;
 }
+
+.descriptionContainer .rowContainer :not(:first-child) p:first-child {
+  color: transparent;
+}
