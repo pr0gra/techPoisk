@@ -10,6 +10,7 @@ export default function page() {
         padding: "24px 150px 22px",
       }}
     >
+      <div className={styles["hzline"]} />
       <AssemblingComponent />
       <AssemblingComponent />
     </div>
