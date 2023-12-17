@@ -74,4 +74,5 @@
 
 .descriptionContainer .rowContainer :not(:first-child) p:first-child {
   color: transparent;
+  user-select: none;
 }
