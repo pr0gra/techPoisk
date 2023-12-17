@@ -48,7 +48,16 @@
 .sellersContainer {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.sellersContainer p {
+  flex: 1;
+}
+.sellersContainer div {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  flex: 1;
 }
 
 .sellersConfiguratorButton {

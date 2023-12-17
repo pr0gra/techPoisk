@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./style.module.css";
 
-export const MotherboardDescription = () => {
+export const MotherboardDescription = ({ props }: any) => {
   return (
     <>
       <h1 className={styles.title}>Характеристики</h1>

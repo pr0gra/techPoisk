@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./style.module.css";
 
-export const VideoCardDescription = () => {
+export const VideoCardDescription = ({ props }: any) => {
   return (
     <>
       <h1 className={styles.title}>Характеристики</h1>
