@@ -4,7 +4,19 @@ import heart from "../../../../../assets/icons/heart.svg";
 import graph from "../../../../../assets/icons/graph.svg";
 import Image from "next/image";
 import { Sellers } from "./Sellers";
-export const PriceBlock = () => {
+interface Sellers {
+  offers: [
+    {
+      id: number;
+      name: string;
+      logoUrl: string | null;
+      logoWidth: number | null;
+      logoHeight: number | null;
+    }
+  ];
+}
+export const PriceBlock = ({ offers }: any) => {
+  console.log(offers);
   return (
     <div className={styles.container}>
       <div className={styles.price}>
@@ -20,9 +32,9 @@ export const PriceBlock = () => {
           </button>
         </div>
       </div>
-      <div>
-        <Sellers />
-      </div>
+      {offers?.map((e: any) => {
+        return <Sellers price={e.price} store={e.store} key={e.id} />;
+      })}
     </div>
   );
 };

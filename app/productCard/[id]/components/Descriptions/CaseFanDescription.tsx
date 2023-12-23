@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
-export const CaseFanDescription = () => {
+export const CaseFanDescription = ({ props }: any) => {
   return (
     <>
       <h1 className={styles.title}>Характеристики</h1>
