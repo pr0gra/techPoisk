@@ -33,13 +33,7 @@ export const PriceBlock = ({ offers }: any) => {
         </div>
       </div>
       {offers?.map((e: any) => {
-        return (
-          <>
-            <div>
-              <Sellers price={e.price} store={e.store} />
-            </div>
-          </>
-        );
+        return <Sellers price={e.price} store={e.store} key={e.id} />;
       })}
     </div>
   );

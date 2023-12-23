@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <div className={styles["footer"]}>
+    <div className={styles["footer"]} style={{ flex: 1 }}>
       <div className={styles["main"]}>
         <div className={styles["left-part"]}>
           <div className={styles["column"]}>

@@ -64,7 +64,7 @@
   /* line-height: 34px; */
 }
 .DescriptionColumn p {
-  font-weight: 600;
+  font-weight: 450;
   flex: 1;
 }
 
@@ -72,7 +72,7 @@
   display: flex;
 }
 .DescriptionRow h3 {
-  font-weight: 100;
+  font-weight: 300;
   flex: 2.5;
 }
 
